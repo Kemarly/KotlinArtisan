@@ -17,7 +17,7 @@ class Drawing : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawing)
 
-        drawingView = findViewById(R.id.drawingView)
+        drawingView = ViewById(R.id.drawingView)
         deleteButton = findViewById(R.id.deleteButton)
         saveButton = findViewById(R.id.saveButton)
         shrinkButton = findViewById(R.id.shrinkButton)
