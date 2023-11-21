@@ -24,12 +24,12 @@ class Drawing : AppCompatActivity() {
         growButton = findViewById(R.id.growButton)
         undoButton = findViewById(R.id.undoButton)
 
-        deleteButton.setOnClickListener { drawingView.clearDrawing() }
+        /*deleteButton.setOnClickListener { drawingView.clearDrawing() }
         saveButton.setOnClickListener {val bitmap = Bitmap.createBitmap(drawingView.width, drawingView.height, Bitmap.Config.ARGB_8888)
             val canvas = Canvas(bitmap)
             drawingView.draw(canvas) }
         shrinkButton.setOnClickListener { drawingView.shrinkShape() }
         growButton.setOnClickListener { drawingView.growShape() }
-        undoButton.setOnClickListener { drawingView.undo() }
+        undoButton.setOnClickListener { drawingView.undo() }*/
     }
 }
