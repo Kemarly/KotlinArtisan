@@ -4,6 +4,7 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 
 private lateinit var drawingView: Drawing
@@ -16,8 +17,7 @@ class Drawing : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawing)
-
-        drawingView = ViewById(R.id.drawingView)
+        drawingView = findViewById<Drawing>(R.id.drawingView)
         deleteButton = findViewById(R.id.deleteButton)
         saveButton = findViewById(R.id.saveButton)
         shrinkButton = findViewById(R.id.shrinkButton)
