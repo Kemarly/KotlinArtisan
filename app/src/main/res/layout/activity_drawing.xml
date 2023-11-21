@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        android:contentDescription="Draw" />
 
     <ImageButton
         android:id="@+id/saveButton"

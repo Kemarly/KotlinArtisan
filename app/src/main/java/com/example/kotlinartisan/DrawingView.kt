@@ -58,9 +58,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
         return true
     }
 
-    companion object {
-
-    }
+    companion object {}
     fun setCurrentShape(shape: Path) {
         currentShape = shape
     }
