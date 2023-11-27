@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import com.example.kotlinartisan.Drawing
+
 
 private lateinit var drawingView: Drawing
 private lateinit var deleteButton: ImageButton
@@ -17,7 +19,7 @@ class Drawing : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawing)
-        drawingView = findViewById<Drawing>(R.id.drawingView)
+        drawingView = findViewById<View>(R.id.drawingView) as Drawing
         deleteButton = findViewById(R.id.deleteButton)
         saveButton = findViewById(R.id.saveButton)
         shrinkButton = findViewById(R.id.shrinkButton)
