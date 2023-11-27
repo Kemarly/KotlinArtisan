@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_start_screen)
 
         startButton = findViewById(R.id.startButton)
-        startButton.setOnClickListener { val intent = Intent(this@MainActivity, MainActivity::class.java)
+        startButton.setOnClickListener { val intent = Intent(this@MainActivity, StartScreen::class.java)
             startActivity(intent) }
     }
 }
