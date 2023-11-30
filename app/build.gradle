@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.android.library'
+    //id 'org.jetbrains.kotlin.android' version '2.0.0-Beta1' apply false
 }
 
 android {
@@ -29,6 +31,7 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+        //suppressKotlinVersionCompatibilityCheck = true
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -47,7 +50,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.car.app:app-*:1.4.0-beta01'
+    //implementation 'androidx.car.app:app-*:1.4.0-beta01'
+    //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.0-Beta1"
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
