@@ -1,5 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
 buildscript {
+
+    ext {
+        kotlin_version = "1.7.20"
+    }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
@@ -11,9 +17,7 @@ plugins {
     //kotlin("android") version "1.7.20"
     //kotlin("kapt") version "1.7.20"
 }
-ext {
-    kotlin_version = "1.7.20"
-}
+
 
 
 allprojects {
