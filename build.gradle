@@ -8,16 +8,16 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:8.1.0'
     }
 }
 plugins {
     id 'com.android.application' version '8.0.2'
-    id 'com.android.library' version '8.0.2'
+    //id 'com.android.library' version '8.0.2'
     id 'org.jetbrains.kotlin.android' version '2.0.0-Beta1'
     //kotlin("android") version "1.7.20"
     //kotlin("kapt") version "1.7.20"
 }
-
 
 
 allprojects {
